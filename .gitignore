@@ -9,3 +9,6 @@ __pycache__/
 
 #ignore .DS_Store
 .DS_Store/
+
+# ignore the generated audio files
+*.mp3
