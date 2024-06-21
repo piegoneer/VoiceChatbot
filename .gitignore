@@ -1,2 +1,5 @@
 # Ignore the config file
 /config.txt
+
+# Ignore Jupyter lab checkpoints folder
+.ipynb_checkpoints/
