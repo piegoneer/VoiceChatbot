@@ -35,7 +35,8 @@ def textToAudioFile(text, audioFileOuput):
     )
 
     response.stream_to_file(speech_file_path)
-    
+
+
 
 def audioToText(audioFile):
     if client is None:
@@ -49,4 +50,9 @@ def audioToText(audioFile):
     return transcription.text
 
 
-    
+
+
+
+
+
+
