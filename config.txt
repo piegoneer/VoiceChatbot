@@ -1,1 +1,1 @@
-OPENAI_API_KEY="Test"
+OPENAI_API_KEY="Should show nothing"
