@@ -12,3 +12,4 @@ __pycache__/
 
 # ignore the generated audio files
 *.mp3
+*.m4a

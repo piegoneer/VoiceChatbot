@@ -25,6 +25,8 @@ def setupOpenAIAPI():
 
 
 def textToAudioFile(text, audioFileOuput):
+    if client is None:
+        raise ValueError("The OpenAI API client has not been initialized. Call setupOpenAIAPI(api_key) first.")
     speech_file_path = audioFileOuput
     response = client.audio.speech.create(
         model="tts-1",
@@ -35,6 +37,16 @@ def textToAudioFile(text, audioFileOuput):
     response.stream_to_file(speech_file_path)
     
 
+def audioToText(audioFile):
+    if client is None:
+        raise ValueError("The OpenAI API client has not been initialized. Call setupOpenAIAPI(api_key) first.")
+    
+    with open(audioFile, "rb") as audio:
+        transcription = client.audio.transcriptions.create(
+            model="whisper-1", 
+            file=audio
+        )
+    return transcription.text
 
 
     
