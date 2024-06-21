@@ -1,1 +1,1 @@
-OPENAI_API_KEY="Should show nothing"
+OPENAI_API_KEY="Hidden Danger"

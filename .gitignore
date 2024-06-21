@@ -3,3 +3,6 @@
 
 # Ignore Jupyter lab checkpoints folder
 .ipynb_checkpoints
+
+# Ignore __pycache__
+__pycache__/
