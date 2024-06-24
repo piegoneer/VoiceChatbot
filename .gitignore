@@ -1,5 +1,6 @@
 # Ignore the config file
 /config.txt
+/google_credential.json
 
 # Ignore Jupyter lab checkpoints folder
 .ipynb_checkpoints
@@ -14,3 +15,5 @@ __pycache__/
 *.mp3
 *.m4a
 *.wav
+
+voicechatbot-env/
